@@ -11,7 +11,7 @@ if ENV:
         # Get this value from my.telegram.org! Please do not steal
         LOCATION = os.environ.get("LOCATION", None)
         ALIVE_TEXT = os.environ.get("ALIVE_TEXT", None)
-        OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
+        OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", "19fc11271a958183a1ccd8dad2fe7c82")
         STRING_SESSION_2 = os.environ.get("STRING_SESSION_2", None)
         STRING_SESSION_3 = os.environ.get("STRING_SESSION_3", None)
         # Get your own ACCESS_KEY from http://api.screenshotlayer.com/api/capture
@@ -33,13 +33,13 @@ if ENV:
             "HASH_TO_TORRENT_API", "https://example.com/torrent/{}"
         )
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "VirtualUserbot")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Ai.userbot")
         # Get a Free API Key from OCR.Space
-        OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+        OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", "f362cf88cb88957")
         DEEP_API_KEY = os.environ.get("DEEP_API_KEY", None)
         NOSPAMPLUS_TOKEN = os.environ.get("NOSPAMPLUS_TOKEN", None)
         # Send .get_id in any group with all your administration bots (added)
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001198699233))
+        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", --1001481049387))
         # TG API limit. An album can have atmost 10 media!
         GOOGLE_SEARCH_COUNT_LIMIT = int(os.environ.get("GOOGLE_SEARCH_COUNT_LIMIT", 9))
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
@@ -68,7 +68,7 @@ if ENV:
         CHATS_TO_MONITOR_FOR_ANTI_FLOOD = []
         # Get your own API key from https://www.remove.bg/ or
         # feel free to use http://telegram.dog/Remove_BGBot
-        REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+        REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "oHLzt1gkG8mqikrX7FSvpYKG")
         # Set to True if you want to block users that are spamming your PMs.
         SLAP_USERNAME = os.environ.get("SLAP_USERNAME", None)
         GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
@@ -76,7 +76,7 @@ if ENV:
         NO_P_M_SPAM = bool(os.environ.get("NO_P_M_SPAM", False))
         # define "spam" in PMs
         NO_SONGS = bool(os.environ.get("NO_SONGS", False))
-        MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
+        MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 6))
         # set to True if you want to log PMs to your PM_LOGGR_BOT_API_ID
         NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", False))
         # send .get_id in any channel to forward all your NEW PMs to this group
@@ -86,10 +86,10 @@ if ENV:
         # For Databases
         # can be None in which case modules requiring
         # DataBase would not work
-        DB_URI = os.environ.get("DATABASE_URL", None)
+        DB_URI = os.environ.get("DATABASE_URL", "sqldbtype://lasiya:lasiya1234@db.cjv7dodvfbve.ap-south-1.rds.amazonaws.com:5432/D1")
         # number of rows of buttons to be displayed in .helpme command
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(
-            os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5)
+            os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 8)
         )
         # specify command handler that should be used for the modules
         # this should be a valid "regex" pattern
