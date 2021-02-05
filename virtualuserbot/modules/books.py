@@ -58,14 +58,14 @@ async def _(event):
                 f.write("\n" + title)
                 f.write("\nBook link:- " + link + "\n\n")
 
-        f.write("By VirtualUserbot.")
+        f.write("By Ai.Userbot)
         f.close()
-        caption = "By VirtualUserbot.\n Get your Superpowers with [VirtualUserbot](github.com/inukaasith/virtualuserbot)"
+        caption = "By Ai.Userbot\n Get your Superpowers with [⧏ 𝒍𝒂𝒔𝒊𝒚𝒂 / ⧐](lasiya.ml)"
 
         await borg.send_file(
             event.chat_id,
             "book.txt",
-            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY VIRTUALUSERBOT. Get your Superpowers with [VirtualUserbot](github.com/inukaasith/virtualuserbot).**",
+            caption=f"** For More Join here!\n\n [Group](t.me/danuma01).**",
         )
         os.remove("book.txt")
 
