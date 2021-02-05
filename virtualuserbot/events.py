@@ -128,8 +128,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.client.respond(
-                            "`Sorry, my virtualuserbot has crashed.\
-                        \nThe error logs are stored in the virtualuserbot's log chat.`"
+                            "`Sorry, my Ai.Userbot has crashed.\
+                        \nThe error logs are stored in the Ai.Userbot log chat.`"
                         )
 
                     await check.client.send_file(send_to, "error.log", caption=text)
