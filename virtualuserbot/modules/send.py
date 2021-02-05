@@ -4,7 +4,7 @@ from datetime import datetime
 from virtualuserbot import CMD_HELP
 from virtualuserbot.utils import friday_on_cmd, sudo_cmd
 
-fridaythumb = "./resources/IMG_20200929_103719_628.jpg"
+fridaythumb = "./resources/Y.jpg"
 
 
 @friday.on(friday_on_cmd(pattern="send ?(.*)"))
@@ -18,7 +18,7 @@ async def send(event):
     the_plugin_file = "./virtualuserbot/modules/{}.py".format(input_str)
     end = datetime.now()
     (end - start).seconds
-    men = f"Plugin Name - {input_str}.py \nUploaded By VirtualUserbot"
+    men = f"Plugin Name - {input_str}.py \nUploaded By Ai.Userbot"
     await event.client.send_file(  # pylint:disable=E0602
         event.chat_id,
         the_plugin_file,
