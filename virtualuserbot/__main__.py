@@ -10,7 +10,7 @@ from virtualuserbot import bot
 from virtualuserbot.Configs import Config
 from virtualuserbot.utils import load_module, start_assistant
 
-sed = logging.getLogger("VirtualUserbot")
+sed = logging.getLogger("GroupManager")
 
 
 async def add_bot(bot_token):
@@ -34,7 +34,7 @@ else:
 
 import glob
 
-path = "virtualuserbot/modules/*.py"
+path = "GroupManager/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -43,17 +43,17 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "virtualuserbot/modules/assistant/*.py"
+    path = "GroupManager/modules/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
             path1 = Path(f.name)
             shortname = path1.stem
             start_assistant(shortname.replace(".py", ""))
-    sed.info("Ai.Userbot And Assistant Bot Have Been Installed Successfully !")
+    sed.info("GroupManager And Assistant Bot Have Been Installed Successfully !")
 else:
-    sed.info("Ai.Userbot Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @danuma01 For Any Support Or Doubts")
+    sed.info("GroupManager Has Been Installed Sucessfully !")
+    sed.info("You Can Visit @sinhagiri_visual_studio For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
